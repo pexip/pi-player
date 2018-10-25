@@ -17,13 +17,12 @@ curl -s https://raw.githubusercontent.com/pexip/pi-player/master/res/video -o /u
 chmod +x /usr/local/bin/video
 
 # Install systemd unit
-curl https://raw.githubusercontent.com/pexip/pi-player/master/res/video.service -o /etc/systemd/system/video.service
+curl -s https://raw.githubusercontent.com/pexip/pi-player/master/res/video.service -o /etc/systemd/system/video.service
 systemctl enable video.service
 
 if [ ! -d "/home/pi/videos" ]; then
-  echo "WARNING: Before starting the video serivce, place some .mkv video files in /home/pi/videos"
+  echo "WARNING: Before starting the video service, place some .mkv video files in /home/pi/videos"
 fi
 
 echo "Installed services, video will play at next boot."
 echo "To start now, run 'video start'."
-
