@@ -1,0 +1,9 @@
+#!/bin/bash
+# Helper script to simplify starting, stopping, restarting video.
+
+if [ $# -ne 1 ]; then
+  echo "Usage: $0 start | stop | restart | enable | disable"
+  exit
+fi
+
+sudo systemctl "$1" video.service
