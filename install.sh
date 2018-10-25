@@ -11,9 +11,9 @@ apt update
 apt install -y omxplayer curl
 
 # Install scripts
-curl https://raw.githubusercontent.com/pexip/pi-player/master/res/player.sh -o /opt/player.sh
+curl -s https://raw.githubusercontent.com/pexip/pi-player/master/res/player.sh -o /opt/player.sh
 chmod +x /opt/player.sh
-curl https://raw.githubusercontent.com/pexip/pi-player/master/res/video -o /usr/local/bin/video
+curl -s https://raw.githubusercontent.com/pexip/pi-player/master/res/video -o /usr/local/bin/video
 chmod +x /usr/local/bin/video
 
 # Install systemd unit
