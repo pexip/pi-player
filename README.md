@@ -1,3 +1,7 @@
+# ⚠️ DEPRECATED ⚠️ 
+
+See instead: https://github.com/pexip/qa-resources/
+
 # Fullscreen Video Player for Raspberry Pi #
 
 A set of scripts to automate fullscreen videos playing on a Raspberry Pi.
